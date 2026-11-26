@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RoadMind is a MATLAB and Simulink autonomous-driving research project focused on adaptive planning and collision avoidance for unstructured Indian roads.">
+  <title>RoadMind — Adaptive Driving for Indian Roads</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0c1118;
+      color: #eef4f7;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 82% 10%, rgb(31 130 116 / 18%), transparent 34rem),
+        #0c1118;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 84px;
+      border-bottom: 1px solid #26323d;
+    }
+
+    .brand {
+      color: #f3f7f8;
+      font-size: 1.1rem;
+      font-weight: 750;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+
+    .github-link,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border: 1px solid #3b4b55;
+      border-radius: 8px;
+      color: #eef4f7;
+      font-size: 0.9rem;
+      font-weight: 650;
+      text-decoration: none;
+      transition: border-color 150ms ease, background 150ms ease;
+    }
+
+    .github-link:hover,
+    .button.secondary:hover {
+      border-color: #83d6c3;
+      background: #18252a;
+    }
+
+    main {
+      padding: 86px 0 72px;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: #83d6c3;
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 5.2rem);
+      letter-spacing: -0.065em;
+      line-height: 1.02;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 24px 0 0;
+      color: #b4c1c8;
+      font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+      line-height: 1.75;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button.primary {
+      border-color: #83d6c3;
+      background: #83d6c3;
+      color: #0c1717;
+    }
+
+    .button.primary:hover {
+      border-color: #a4eadb;
+      background: #a4eadb;
+    }
+
+    .section-heading {
+      margin: 0 0 18px;
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    .pipeline {
+      margin-top: 68px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      min-height: 190px;
+      padding: 24px;
+      border: 1px solid #263640;
+      border-radius: 12px;
+      background: linear-gradient(145deg, rgb(24 35 43 / 88%), rgb(16 23 30 / 88%));
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: #a8b7bf;
+      line-height: 1.65;
+    }
+
+    .scenarios {
+      margin-top: 48px;
+      padding: 24px;
+      border-left: 3px solid #83d6c3;
+      background: #121b22;
+      color: #bac6cc;
+      line-height: 1.7;
+    }
+
+    .scenarios strong {
+      color: #eef4f7;
+    }
+
+    footer {
+      padding: 24px 0 36px;
+      border-top: 1px solid #26323d;
+      color: #87979f;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 64px 0 52px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        min-height: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="brand" href="/" aria-label="RoadMind home">ROADMIND</a>
+      <a class="github-link" href="https://github.com/Asritha730/RoadMind-project">View on GitHub</a>
+    </header>
+
+    <main>
+      <p class="eyebrow">Autonomous driving research · MATLAB + Simulink</p>
+      <h1>Adaptive driving for unstructured Indian roads.</h1>
+      <p class="intro">
+        RoadMind is a research prototype for adaptive path planning and
+        collision avoidance. Its perception-to-control pipeline brings
+        sensing, tracking, prediction, decision-making, planning, and vehicle
+        control together in a MATLAB simulation.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/Asritha730/RoadMind-project">Explore the project</a>
+        <a class="button secondary" href="https://github.com/Asritha730/RoadMind-project/blob/main/docs/architecture.md">Read the architecture</a>
+      </div>
+
+      <section class="pipeline" aria-labelledby="pipeline-heading">
+        <h2 class="section-heading" id="pipeline-heading">One connected autonomy pipeline</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Perceive and predict</h3>
+            <p>Camera, lidar, and radar detections feed sensor fusion, object tracking, and motion prediction.</p>
+          </article>
+          <article class="card">
+            <h3>Plan with safety in mind</h3>
+            <p>Behavior decisions and adaptive planning evaluate candidate paths around dynamic road users.</p>
+          </article>
+          <article class="card">
+            <h3>Simulate and evaluate</h3>
+            <p>Run the closed-loop MATLAB scenarios, inspect metrics, or explore the CARLA integration foundation.</p>
+          </article>
+        </div>
+      </section>
+
+      <p class="scenarios">
+        <strong>Scenarios:</strong> village road, urban intersection, highway
+        merge, market area, and cattle crossing.
+        <a href="https://github.com/Asritha730/RoadMind-project/blob/main/README.md">Project setup and details</a>
+      </p>
+    </main>
+
+    <footer>
+      RoadMind · MATLAB and Simulink autonomous-driving research project
+    </footer>
+  </div>
+</body>
+</html>
