@@ -1,0 +1,14 @@
+*.asv
+*.autosave
+slprj/
+*.slxc
+__pycache__/
+*.pyc
+
+# Generated per-run logs (results/logs/.gitkeep keeps the folder tracked)
+results/logs/*.csv
+results/logs/*.txt
+results/figures/*
+!results/figures/.gitkeep
+results/tables/*
+!results/tables/.gitkeep
